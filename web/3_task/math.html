@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фромулы</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+        <name class="navbar-header ">
+            <span class="navbar-brand mb-0 h1">Мой сайт</span>
+        </name>
+        <links class="collapse navbar-collapse" id="NSC">
+            <ul class="navbar-nav mr-auto">
+                <li class = "nav-item active"><a class = "nav-link" href="main.html">Главная</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ссылки
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="math.html">Формулы</a>
+                        <a class="dropdown-item" href="paint.html">Рисунок</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+            <search>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-secondly my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+            </search>
+        </links>
+    </div>
+</header>
+
+<div class="container-fluid canvas mt-5 d-flex flex-column justify-content-around align-items-center">
+    <div style="padding-bottom: 30px">
+        <math>
+            <msqrt>
+                <mrow>
+                    <mi>p</mi>
+                    <mo>*</mo>
+                    <mfenced separators="" open="(" close=")">
+                        <mi>p</mi>
+                        <mo>-</mo>
+                        <mi>a</mi>
+                    </mfenced>
+                    <mo>*</mo>
+                    <mfenced separators="" open="(" close=")">
+                        <mi>p</mi>
+                        <mo>-</mo>
+                        <mi>b</mi>
+                    </mfenced>
+                    <mo>*</mo>
+                    <mfenced separators="" open="(" close=")">
+                        <mi>p</mi>
+                        <mo>-</mo>
+                        <mi>c</mi>
+                    </mfenced>
+                </mrow>
+            </msqrt>
+        </math>
+    </div>
+    <div style="padding-bottom: 30px">
+        <math>
+            <msub>
+                <mi>x</mi>
+                <mn>
+                    1
+                    <mo>,</mo>
+                    2
+                </mn>
+            </msub>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mo>-</mo>
+                    <mi>b </mi>
+                    <mo>±</mo>
+                    <msqrt>
+                        <mrow>
+                            <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>-</mo>
+                            <mn>4</mn>
+                            <mi>a</mi>
+                            <mi>c</mi>
+                        </mrow>
+                    </msqrt>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                    <mi>a</mi>
+                </mrow>
+            </mfrac>
+        </math>
+    </div>
+    <div style="padding-bottom: 30px">
+        <math>
+            <mi>S</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+            <mo>-</mo>
+            <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+            </mfrac>
+            <mo>+</mo>
+            <mfrac>
+                <mn>1</mn>
+                <mn>4</mn>
+            </mfrac>
+            <mo>-</mo>
+            <mfrac>
+                <mn>1</mn>
+                <mn>8</mn>
+            </mfrac>
+            <mo>+</mo>
+            <mi>…</mi>
+            <mo>+</mo>
+            <msup>
+                <mrow>
+                    <mfenced separators="" open="(" close=")">
+                        <mn>-1</mn>
+                    </mfenced>
+                </mrow>
+                <mi>n</mi>
+            </msup>
+            <mfrac>
+                <mn>1</mn>
+                <msup>
+                    <mn>2</mn>
+                    <mi>n</mi>
+                </msup>
+            </mfrac>
+            <mo>=</mo>
+            <munderover>
+                <mi>&#x03A3;</mi>
+                <mrow>
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </mrow>
+                <mi>n</mi>
+            </munderover>
+            <msup>
+                <mrow>
+                    <mfenced separators="" open="(" close=")">
+                        <mn>-1</mn>
+                    </mfenced>
+                </mrow>
+                <mi>i</mi>
+            </msup>
+            <mfrac>
+                <mn>1</mn>
+                <msup>
+                    <mn>2</mn>
+                    <mi>i</mi>
+                </msup>
+            </mfrac>
+        </math>
+    </div>
+    <div style="padding-bottom: 30px">
+        <math>
+            <munderover>
+                <mi>lim</mi>
+                <mi>x → &#x221E</mi>
+            </munderover>
+            <mrow>
+                <msup>
+                    <mrow>
+                        <mfenced separators="" open="(" close=")">
+                            <mn>1 </mn>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mi>a</mi>
+                            </mfrac>
+                        </mfenced>
+                    </mrow>
+                    <mi>a</mi>
+                </msup>
+            </mrow>
+            <mo>=</mo>
+            <mi>e</mi>
+        </math>
+    </div>
+    <div style="padding-bottom: 30px">
+        <math>
+            <munderover>
+                <mi>&#x222b;</mi>
+                <mi>b</mi>
+                <mi>a</mi>
+            </munderover>
+            <mi>f</mi>
+            <mfenced separators="" open="(" close=")">
+                <mi>x</mi>
+            </mfenced>
+            <mi>dx</mi>
+            <mo>=</mo>
+            <mi>F</mi>
+            <mfenced separators="" open="(" close=")">
+                <mi>b</mi>
+            </mfenced>
+            <mo>-</mo>
+            <mi>F</mi>
+            <mfenced separators="" open="(" close=")">
+                <mi>a</mi>
+            </mfenced>
+        </math>
+    </div>
+</div>
+</body>
+</html>
