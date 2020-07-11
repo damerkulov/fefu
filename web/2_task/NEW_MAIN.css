@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-size: 30px;
+    font-family: Arial;
+ }
+
+
+
+.header {
+    text-decoration: none;
+    min-height: 30px;
+    width: 100%;
+    background-image: url("https://lh3.googleusercontent.com/proxy/15pGR78HZ1FpW16DkH10lxGZYdarZK4K4LN3TypGc-j2mkgauBPAlk2Fo95HUuIZhPQcfbfQBA4fMx0tcggm_CSRa_iZVZbn6bXhu1gUBXwD");
+    font-family: Arial;
+}
+
+/*Main menu*/
+
+.header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+head > ul li {
+    position: relative;
+}
+
+.header > ul li > a {
+    display: block;
+    padding: 15px 30px 15px 40px;
+
+    background-image: url("https://lh3.googleusercontent.com/proxy/15pGR78HZ1FpW16DkH10lxGZYdarZK4K4LN3TypGc-j2mkgauBPAlk2Fo95HUuIZhPQcfbfQBA4fMx0tcggm_CSRa_iZVZbn6bXhu1gUBXwD");
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid;
+    border-right-color: white;
+    transition: all 0.3s ease;
+
+}
+.header > ul li > a:first-child {
+    border-left: 2px;
+    border-left-color: white;
+
+}
+
+.header > ul li > a:hover {
+    background: #E2C3FA;
+    color:white;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.header li:hover > ul {
+    display: block;
+}
+
+
+/*Sub menu*/
+
+.header li ul {
+    position: absolute;
+    width: 250px;
+    display: none;
+}
+
+.header > ul li > ul li {
+    list-style: none;
+    border: 1px solid white;
+}
+
+/*Sub Sub Menu*/
+
+.header li ul >li ul {
+    position: absolute;
+    min-width: 300px;
+    right: -300px;
+    top: 165px;
+    display: none;
+}
+
+.header > ul li > ul li > ul li {
+    list-style: none;
+    border: 1px solid white;
+}
+/* Main content */
+
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+
+.text{
+    padding-right: 20px;
+}
+
+.pics {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    float: left;
+    width: 33%;
+}
+
+.info {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 34%;
+    float: left;
+}
+
+.etc {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33%;
+    float: left;
+}
+
+.etc > img {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+
+/*Футер*/
+
+.footer {
+    border-top: 1px solid #3b3b3b;
+    text-align: right;
+    color: #3b3b3b;
+    font-family: Arial;
+    font-size: 20px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+
+/*Второй файл*/
+
+.row > h2 {
+    padding: 15px 15px 15px 25px;
+}
+
+.text > p img {
+    width: 33%;
+    float: left;
+    margin: 0 10px 10px 20px;
+}
+
+.interests > ul {
+    list-style-position: inside;
+    text-align: center;
+}
+.interests > ul:first-child {
+
+    border-top: 1px solid black;
+    padding-bottom: 40px;
+
+}
+
+.name {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.poem {
+    text-align: center;
+}
+
+.author {
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.info{
+    font-size: 16px;
+}
+
+/* Медиазапрос */
+
+@media print {
+    .header {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .pics {
+        display: none;
+    }
+    .etc {
+        display: none;
+    }
+    .info {
+        display: block;
+    }
+
+}
